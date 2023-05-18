@@ -82,6 +82,7 @@
                         <div class="rounded-3 bg-body-tertiary p-2">
                             <h3 class="fs-5 fw-normal mb-1">Input</h3>
                             <p class="mb-0 fst-italic">Số ngày làm việc</p>
+                            <p class="mb-0 fst-italic">Lương 1 ngày: 100.000</p>
                         </div>
                     </div>
                     <div class="col">
@@ -103,7 +104,7 @@
         </div>
     </div>
 
-    <div class="topic-2 my-5">
+    <div class="topic-2 mt-2">
         <div class="topic text-center bg-success-subtle p-3">
             <span class="topic__number rounded-circle bg-success fs-2 d-inline-block text-white fw-semibold">2</span>
             <h1 class="fs-1 fw-light">Tính giá trị trung bình</h1>
@@ -171,7 +172,238 @@
                     <div class="col">
                         <div class="rounded-3 bg-body-tertiary p-2">
                             <h3 class="fs-5 fw-normal mb-1">Output</h3>
-                            <p class="mb-0 fst-italic">Trung bình 5 số thực ra màn hình hoặc yêu cầu người dùng nhập lại nếu thông tin được nhập bị sai hoặc thiếu</p>
+                            <p class="mb-0 fst-italic">Trung bình 5 số thực ra màn hình hoặc yêu cầu người dùng nhập lại
+                                nếu thông tin được nhập bị sai hoặc thiếu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="topic-3 mt-2">
+        <div class="topic text-center bg-success-subtle p-3">
+            <span class="topic__number rounded-circle bg-success fs-2 d-inline-block text-white fw-semibold">3</span>
+            <h1 class="fs-1 fw-light">Quy đổi tiền</h1>
+        </div>
+        <div class="row">
+            <div class="col-7 bg-primary-subtle p-4">
+                <h2 class="text-center fs-4 fw-light fst-italic mb-3">Chương trình quy đổi từ USD sang VND.
+                </h2>
+                <form action="" class="mx-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <div>
+                                <label for="" class="mb-2">Nhập số USD cần quy đổi:</label>
+                                <div class="d-flex align-items-center">
+                                    <input type="text" class="form-control me-3" id="moneyUSD">
+                                    <span class="flex-1 fst-italic">USD</span>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <label for="" class="mb-2">Nhập giá 1 USD = ___ VND:</label>
+                                <div class="d-flex align-items-center">
+                                    <input type="text" class="form-control me-3" value="23500" id="constUSD">
+                                    <span class="flex-1 fst-italic">VND</span>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-8">
+                                    <button id="topic-3__btn" class="btn btn-success d-block w-100 fs-5 fw-semibold">Đổi
+                                        ngay</button>
+                                </div>
+                                <div class="col-4">
+                                    <button id="topic-3__resetBtn"
+                                        class="btn btn-secondary d-block w-100 fs-5 fw-normal">Nhập lại
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-center justify-content-center">
+                            <div>
+                                <h3 class="fs-4 fw-normal text-center">Số VND quy đổi được</h3>
+                                <div class="text-center fs-2">
+                                    <span id="topic-3__result">
+                                        <span>____ VND</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-5 bg-danger-subtle p-4">
+                <h2 class="text-center fs-4 fw-light fst-italic mb-3">Mô hình 3 khối</h2>
+                <div class="row text-center">
+                    <div class="col">
+                        <div class="rounded-3 bg-body-tertiary p-2">
+                            <h3 class="fs-5 fw-normal mb-1">Input</h3>
+                            <p class="mb-0 fst-italic">Số USD cần quy đổi</p>
+                            <p class="mb-0 fst-italic">1 USD = 23.500 VND</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="rounded-3 bg-body-tertiary p-2">
+                            <h3 class="fs-5 fw-normal mb-1">Process</h3>
+                            <p class="mb-0 fst-italic">Nhận số USD</p>
+                            <p class="mb-0 fst-italic">Kiểm tra USD nhập vào hợp lệ</p>
+                            <p class="mb-0 fst-italic">Số VND = số USD * 23500</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="rounded-3 bg-body-tertiary p-2">
+                            <h3 class="fs-5 fw-normal mb-1">Output</h3>
+                            <p class="mb-0 fst-italic">Yêu cầu nhập lại nếu người dùng nhập sai</p>
+                            <p class="mb-0 fst-italic">In kết quả quy đổi được ra màn hình.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="topic-4 mt-2">
+        <div class="topic text-center bg-success-subtle p-3">
+            <span class="topic__number rounded-circle bg-success fs-2 d-inline-block text-white fw-semibold">4</span>
+            <h1 class="fs-1 fw-light">Tính diện tích, chu vi hình chữ nhật</h1>
+        </div>
+        <div class="row">
+            <div class="col-7 bg-primary-subtle p-4">
+                <h2 class="text-center fs-4 fw-light fst-italic mb-3">Chương trình tính chu vi, diện tích hình chữ nhật.
+                </h2>
+                <form action="" class="mx-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <div>
+                                <label for="" class="mb-2">Nhập vào chiều dài:</label>
+                                <div class="d-flex align-items-center">
+                                    <input type="text" class="form-control me-3" id="rectLength">
+                                    <span class="flex-1 fst-italic">cm</span>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <label for="" class="mb-2">Nhập chiều rộng:</label>
+                                <div class="d-flex align-items-center">
+                                    <input type="text" class="form-control me-3" id="rectWidth">
+                                    <span class="flex-1 fst-italic">cm</span>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-8">
+                                    <button id="topic-4__btn" class="btn btn-success d-block w-100 fs-5 fw-semibold">Kết
+                                        quả</button>
+                                </div>
+                                <div class="col-4">
+                                    <button id="topic-4__resetBtn"
+                                        class="btn btn-secondary d-block w-100 fs-5 fw-normal">Nhập lại
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="top4showOutput" class="col-6 d-flex align-items-center justify-content-center">
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-5 bg-danger-subtle p-4">
+                <h2 class="text-center fs-4 fw-light fst-italic mb-3">Mô hình 3 khối</h2>
+                <div class="row text-center">
+                    <div class="col">
+                        <div class="rounded-3 bg-body-tertiary p-2">
+                            <h3 class="fs-5 fw-normal mb-1">Input</h3>
+                            <p class="mb-0 fst-italic">Chiều dài</p>
+                            <p class="mb-0 fst-italic">Chiều rộng</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="rounded-3 bg-body-tertiary p-2">
+                            <h3 class="fs-5 fw-normal mb-1">Process</h3>
+                            <p class="mb-0 fst-italic">Nhận chiều dài, chiều rộng.</p>
+                            <p class="mb-0 fst-italic">Kiểm tra thông tin nhập vào.</p>
+                            <p class="mb-0 fst-italic">Diện tích = dài * rộng</p>
+                            <p class="mb-0 fst-italic">Chu vi = (dài + rộng) * 2</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="rounded-3 bg-body-tertiary p-2">
+                            <h3 class="fs-5 fw-normal mb-1">Output</h3>
+                            <p class="mb-0 fst-italic">Yêu cầu nhập lại nếu người dùng nhập sai</p>
+                            <p class="mb-0 fst-italic">In kết quả tính toán được ra màn hình.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="topic-5 mt-2">
+        <div class="topic text-center bg-success-subtle p-3">
+            <span class="topic__number rounded-circle bg-success fs-2 d-inline-block text-white fw-semibold">5</span>
+            <h1 class="fs-1 fw-light">Tính tổng 2 ký số</h1>
+        </div>
+        <div class="row">
+            <div class="col-7 bg-primary-subtle p-4">
+                <h2 class="text-center fs-4 fw-light fst-italic p-3">Chương trình tính tổng 2 ký số.
+                </h2>
+                <form action="" class="mx-4 mt-5">
+                    <div class="row">
+                        <div class="col-6">
+                            <div>
+                                <label for="" class="mb-2">Nhập vào một số 2 chữ số bất kì:</label>
+                                <div class="d-flex align-items-center">
+                                    <input type="text" class="form-control" id="top5_number" placeholder="10 - 99">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-8">
+                                    <button id="topic-5__btn" class="btn btn-success d-block w-100 fs-5 fw-semibold">Kết
+                                        quả</button>
+                                </div>
+                                <div class="col-4">
+                                    <button id="topic-5__resetBtn"
+                                        class="btn btn-secondary d-block w-100 fs-5 fw-normal">Nhập lại
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-center justify-content-center">
+                            <div class="d-flex justify-content-center w-100 px-5">
+                                <div>
+                                    <h3 class="fs-4 fw-normal text-center mb-0">Tổng 2 ký số là: </h3>
+                                    <div class="text-center fs-2">
+                                        <span id="topic-5__result">____</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-5 bg-danger-subtle p-4">
+                <h2 class="text-center fs-4 fw-light fst-italic mb-3">Mô hình 3 khối</h2>
+                <div class="row text-center d-flex">
+                    <div class="col">
+                        <div class="rounded-3 bg-body-tertiary p-2">
+                            <h3 class="fs-5 fw-normal mb-1">Input</h3>
+                            <p class="mb-0 fst-italic">Một số có 2 chữ số</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="rounded-3 bg-body-tertiary p-2">
+                            <h3 class="fs-5 fw-normal mb-1">Process</h3>
+                            <p class="mb-0 fst-italic">Nhận vào số người dùng nhập.</p>
+                            <p class="mb-0 fst-italic">Kiểm tra thông tin nhập vào.</p>
+                            <p class="mb-0 fst-italic">Số hàng đơn vị = num % 10</p>
+                            <p class="mb-0 fst-italic">Số hàng chục = num / 10</p>
+                            <p class="mb-0 fst-italic">Tổng 2 ký số = số hàng đơn vị + số hàng chục</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="rounded-3 bg-body-tertiary p-2">
+                            <h3 class="fs-5 fw-normal mb-1">Output</h3>
+                            <p class="mb-0 fst-italic">Yêu cầu nhập lại nếu người dùng nhập sai</p>
+                            <p class="mb-0 fst-italic">In kết quả tính toán được ra màn hình.</p>
                         </div>
                     </div>
                 </div>
